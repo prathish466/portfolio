@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prathish MN — Portfolio</title>
+  <meta name="description" content="Portfolio of Prathish MN — Engg student skilled in Microsoft Applications. Contact: mnprathish466@gmail.com" />
+  <style>
+    :root{
+      --bg:#fff; --text:#0b1220; --muted:#556; --accent:#2563eb;
+      --card:#f8fafc; --radius:10px;
+      font-synthesis:none;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--text); background:var(--bg);
+      max-width:1000px;margin:2rem auto;padding:1rem;
+      line-height:1.45;
+    }
+    header{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    h1{margin:0;font-size:1.4rem}
+    nav a{color:var(--muted);text-decoration:none;margin-left:.6rem}
+    nav a:hover{color:var(--accent)}
+    .hero{
+      display:flex;gap:1.25rem;align-items:center;margin:1.2rem 0;padding:1rem;border-radius:var(--radius);
+      background:linear-gradient(180deg,#ffffff 0%, #fbfdff 100%);
+      box-shadow:0 1px 0 rgba(0,0,0,0.03);
+    }
+    .avatar{
+      width:96px;height:96px;border-radius:12px;background:#e9eefb;flex:0 0 96px;display:flex;align-items:center;justify-content:center;
+      color:var(--accent);font-weight:700;font-size:1.6rem;
+    }
+    .intro{flex:1}
+    .intro p{margin:.2rem 0;color:var(--muted)}
+    .cta{margin-top:.6rem}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.45rem .75rem;border-radius:8px;text-decoration:none;font-weight:600}
+    main{margin-top:1.2rem}
+    .section-header{display:flex;justify-content:space-between;align-items:center;margin:0 0 .6rem}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+    .project{background:var(--card);padding:1rem;border-radius:12px;border:1px solid #eef3fb}
+    .project h3{margin:.2rem 0;font-size:1.05rem}
+    .meta{font-size:.9rem;color:var(--muted);margin-bottom:.45rem}
+    .skills{display:flex;flex-wrap:wrap;gap:.5rem}
+    .skill{background:#eef6ff;color:var(--accent);padding:.35rem .6rem;border-radius:999px;font-size:.85rem}
+    footer{margin-top:1.6rem;padding-top:1rem;border-top:1px dashed #eee;color:var(--muted);font-size:.95rem}
+    @media (max-width:520px){
+      .hero{flex-direction:row}
+      nav{width:100%;order:3;margin-top:.6rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prathish MN</h1>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a> ·
+      <a href="#about">About</a> ·
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero" aria-labelledby="intro-title">
+    <div class="avatar" aria-hidden="true">PM</div>
+    <div class="intro">
+      <h2 id="intro-title" style="margin:.1rem 0">Engg student — Microsoft Applications</h2>
+      <p>Hi — I’m Prathish, an engineering student focused on practical solutions using Microsoft Applications (Excel, PowerPoint, Word, VBA). I build templates, dashboards, and automated reports to streamline tasks and improve clarity.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Contact me</a>
+        <a style="margin-left:.6rem;color:var(--muted);text-decoration:none" href="#projects">See projects</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <h2 id="projects-heading" style="margin:0">Projects</h2>
+        <small style="color:var(--muted)">Student projects & templates</small>
+      </div>
+
+      <div class="projects">
+        <article class="project" aria-labelledby="p1">
+          <h3 id="p1">Excel Dashboard — Student Performance Tracker</h3>
+          <div class="meta"><strong>Role:</strong> Creator · <strong>Tools:</strong> Microsoft Excel, PivotTables, Charts</div>
+          <p>Designed an easy-to-use dashboard that tracks assignment scores and attendance. Uses PivotTables and charts for interactive filters so instructors can quickly spot trends.</p>
+          <p style="margin-top:.6rem"><a href="#" style="color:var(--accent);text-decoration:none">Live demo / download (placeholder)</a></p>
+        </article>
+
+        <article class="project" aria-labelledby="p2">
+          <h3 id="p2">Automated Report Generator (VBA)</h3>
+          <div class="meta"><strong>Role:</strong> Developer · <strong>Tools:</strong> Excel VBA, Macros</div>
+          <p>Implemented macros to automate monthly report generation: data import, formatting, and export to PDF. Saves manual formatting time and reduces repetitive errors.</p>
+          <p style="margin-top:.6rem"><a href="#" style="color:var(--accent);text-decoration:none">Code / example (placeholder)</a></p>
+        </article>
+
+        <article class="project" aria-labelledby="p3">
+          <h3 id="p3">Presentation Template Library</h3>
+          <div class="meta"><strong>Role:</strong> Designer · <strong>Tools:</strong> PowerPoint, Word</div>
+          <p>Created a set of professional PowerPoint templates and a style guide for academic presentations — includes consistent slide layouts, typography, and export-ready assets.</p>
+          <p style="margin-top:.6rem"><a href="#" style="color:var(--accent);text-decoration:none">Download templates (placeholder)</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:1.25rem" aria-labelledby="about-heading">
+      <div class="section-header">
+        <h2 id="about-heading" style="margin:0">About</h2>
+        <small style="color:var(--muted)">Quick summary</small>
+      </div>
+      <p><strong>Prathish MN</strong> — Engg student with practical skills in Microsoft Applications. I enjoy turning messy data into clear reports, automating repetitive tasks, and preparing presentation-ready documents.</p>
+
+      <div style="margin-top:.8rem">
+        <h3 style="margin:.2rem 0">Skills</h3>
+        <div class="skills" aria-hidden="false">
+          <span class="skill">Microsoft Excel</span>
+          <span class="skill">PivotTables</span>
+          <span class="skill">Excel VBA / Macros</span>
+          <span class="skill">PowerPoint</span>
+          <span class="skill">Word</span>
+          <span class="skill">Templates & Reporting</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:1.25rem" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <h2 id="contact-heading" style="margin:0">Contact</h2>
+        <small style="color:var(--muted)">Get in touch</small>
+      </div>
+      <p>Email: <a href="mailto:mnprathish466@gmail.com">mnprathish466@gmail.com</a></p>
+      <p>If you want, replace the placeholder project links with real files or share sample files and I can help convert them to downloadable templates.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Made by Prathish MN · Engg student · Skills: Microsoft Applications</div>
+    <div style="margin-top:.4rem;color:var(--muted)">Tip: To replace the avatar, swap the .avatar div with &lt;img src="your-photo.jpg" alt="Prathish MN"&gt; and adjust sizes in CSS.</div>
+  </footer>
+</body>
+</html>
